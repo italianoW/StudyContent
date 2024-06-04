@@ -1,0 +1,11 @@
+a cipher is the codified form of a plaintext, which can only be interpreted when put back in the form of a plaintext.
+
+cesar's cipher is basically a transposition of letters in which you move the alphabet 3 letters to the right in a way that taking a plaintext
+such as "bob" it transposes to "ere", which cannot be interpreted, but can easily be broken.
+
+when codifying we look for something that can't be done by hand bcs it also quantifies the amount of difficulty the broker is gonna have.
+
+there's one-time pad security which uses XOR for codifying, using 
+        P XOR K = C  ;  C XOR K = P 
+        P = plaintext; K = key; C = cipher
+      the point is that you can't use the same kew for 2 different P's because that would make the finding of K possible
