@@ -1,0 +1,13 @@
+BlackBox Models
+
+      COA Ciphertext Only Attackers
+        Only know the ciphertext and can't do encryption or decryption queries
+
+      KPA Known Plaintext Attackers
+        Knows a list of ciphertexts and their respective plaintexts
+
+      CPA Choosen Plaintext Attackers
+        Can encrypt any message but doesn't know the proccess yet of decryption.
+
+      CCA Choosen Ciphertext Attackers
+        Can encrypt and decrypt any message but doesn't know the KEY or the proccess.
