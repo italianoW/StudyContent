@@ -5,7 +5,7 @@ such as "bob" it transposes to "ere", which cannot be interpreted, but can easil
 
 when codifying we look for something that can't be done by hand bcs it also quantifies the amount of difficulty the broker is gonna have.
 
-there's one-time pad security which uses XOR for codifying, using 
+there's also one-time pad security which uses XOR for codifying, using 
         P XOR K = C  ;  C XOR K = P 
         P = plaintext; K = key; C = cipher
       the point is that you can't use the same kew for 2 different P's because that would make the finding of K possible
