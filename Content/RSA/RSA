@@ -1,0 +1,26 @@
+------------------------------------------|
+takes (p,q) prime numbers                 |
+n = p.q                                   |
+------------------------------------------|
+Encryption:            Decryption         |
+  m^(e) mod n = c        c^(d) mod n = m  |
+                                          |
+        (m can be changed to f(m))        |
+------------------------------------------|
+euler's totient :  φ(x)                   |
+ φ(x) = (p-1).(q-1)                       |
+------------------------------------------|
+e is a coprime of  φ(x)                   |
+d is caracterized by (e.d mod 1 φ(x))     |
+-------------------------------------------
+
+PITFALLS:
+  MULTIPLICATIVE:
+  c(m1)* c(m2) = c(m1*m2)
+
+  DETERMINISTIC:
+  ∀ c1(m1) = c2(m1) 
+(every criptography of the same message is equal which means by testing encrypting different messages randomically you
+can get what a previous encryped message was)
+
+f(m) usually used in 2024 is 2017
