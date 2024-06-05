@@ -23,4 +23,4 @@ PITFALLS:
 (every criptography of the same message is equal which means by testing encrypting different messages randomically you
 can get what a previous encryped message was)
 
-f(m) usually used in 2024 is 2017
+f(m) usually used in 2024 is 2017 is OAEP
