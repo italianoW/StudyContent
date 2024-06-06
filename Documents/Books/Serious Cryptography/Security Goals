@@ -1,0 +1,4 @@
+INDISTINGUISHABILITY ( IND)
+It shouldn't be possible, given 2 plaintexts (a,b) and a ciphertext (c), which one c refers to.
+  -Even by executing Encryption queries 
+  -(Also decryption if it refers to a CCA model(!CPA))
