@@ -4,5 +4,5 @@ INDISTINGUISHABILITY ( IND )
   -(Also decryption if it refers to a CCA model(!CPA))
 
 NON-MALLEABILITY ( NM )
-  Can't be possible to extract any major information about a ciphertext(c1) when compared to a different generated ciphetext(c2) with relation
-  to their respective plaintexts
+  Can't be possible to extract any major information about a ciphertext(c1) when compared to a different generated ciphetext(c2) with 
+  relation to their respective plaintexts
