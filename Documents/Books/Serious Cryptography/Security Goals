@@ -1,4 +1,8 @@
-INDISTINGUISHABILITY ( IND)
-It shouldn't be possible, given 2 plaintexts (a,b) and a ciphertext (c), which one c refers to.
+INDISTINGUISHABILITY ( IND )
+  It shouldn't be possible, given 2 plaintexts (a,b) and a ciphertext (c), which one c refers to.
   -Even by executing Encryption queries 
   -(Also decryption if it refers to a CCA model(!CPA))
+
+NON-MALLEABILITY ( NM )
+  Can't be possible to extract any major information about a ciphertext(c1) when compared to a different generated ciphetext(c2) with relation
+  to their respective plaintexts
