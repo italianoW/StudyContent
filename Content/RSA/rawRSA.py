@@ -36,7 +36,7 @@ def decrypt(c,d,n):
   message_decrypted = [pow(ch,d,n) for ch in c]
   m = "".join(chr(ch) for ch in message_decrypted)
   return m
-  
+
 p = generate_prime(1000,2000)
 q = generate_diff_prime(p,1000,2000)
 
@@ -53,12 +53,12 @@ print("e =",e)
 d = inverse_module(e,phi_n)
 print("d =",d)
 
-m = "jajajajaja"
+m = "Isso é uma senha especifica!"
 
 print("\n","public key:",e,n)
-ciphertext = encrypt(m,e,n)
-print(ciphertext)
+c = encrypt(m,e,n)
+print(c)
 
 print("\n","private key:",d,n)
-plaintext =  decrypt(ciphertext,d,n)
+plaintext =  decrypt(c,d,n)
 print(plaintext)
