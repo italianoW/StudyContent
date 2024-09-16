@@ -1,0 +1,29 @@
+Utiliza de um while   (não está na última posicao)
+
+Passa de pos em pos+1 comparando (pos,pos-1), se for (condição) ele troca com o prévio e repete o código com pos-1.
+
+condição a escolher : (x>y) XOR (x<y)
+
+
+
+
+
+
+cond = a<b<c<d
+
+def gnomeSort(lista):
+
+	pos=1
+	While( pos < len(lista) ):
+
+		if ( (pos==0) or (lista[pos]>=lista[pos-1]) ):
+			pos+=1
+		else:
+			lista[pos],lista[pos-1] = lista[pos-1],lista[pos]
+			pos-=1
+
+explicação de alguns detalhes:
+
+-lista[pos]>=lista[pos-1]
+	é negação de x<y
+-

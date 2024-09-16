@@ -1,0 +1,7 @@
+try:
+  divisao = int(input('numero dividido: '))/int(input('numero divisor: '))
+  print(divisao)
+except ZeroDivisionError:
+  print('houve um ZeroDivisionError')
+except ValueError:
+  print('Apenas números!')

@@ -1,0 +1,6 @@
+É uma estrútura composta por vétices(nós) e arestas(arcos), sendo eles:
+
+  -Nós:    cada elemento de uma estrutura;
+  -Arcos/Arestas:  as relações entre os nós e como se dão, podendo ter direção especifica ou não.
+
+EX: Rede social possui um grafo direcionado com relação a seguidores visto que A pode seguir B e B não seguir A.

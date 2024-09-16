@@ -1,0 +1,43 @@
+
+def contaElemento(n,lista):
+    cont = 0
+    for e in lista:
+        if e==n:
+            cont+=1
+    return cont
+    
+def somaUmEDict(dict):
+    new = {n:dict[n] for n in dict}
+    for n in dict:
+        new[n] +=1
+    return new    
+    
+def somaComPrevio(dict):
+    new = {n:dict[n] for n in dict}
+    for n in range(min(new)+1,max(new)+1):
+        new[n]+=new[n-1]
+    return new
+
+def moveDireita(dict):
+    new = {n:dict[n] for n in dict}
+    for n in range(max(new),min(new)-1,-1):
+        if n==min(new):
+            new[n]=0
+            return new
+        new[n],new[n-1]=new[n-1],new[n]
+        
+def sorting(lista):
+    amountDict = {n:contaElemento(n,lista) for n in range(min(lista),max(lista)+1)}
+    posDict = moveDireita(somaComPrevio(amountDict))
+    new = []
+    for n in amountDict:
+        for _ in range(amountDict[n]):
+            new.append(n)
+    return new
+l1 = [1,2,1,2,3,4,5,6,1,2,3]
+l2 = [9,8,7,6,5,4,3,2,1]
+l3 = [1,2,3,4,5,6,7,7,7,1,7,8,9]
+
+assert sorting(l1) == [1,1,1,2,2,2,3,3,4,5,6]
+assert sorting(l2) == [1,2,3,4,5,6,7,8,9]
+assert sorting(l3) == [1,1,2,3,4,5,6,7,7,7,7,8,9]

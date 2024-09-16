@@ -1,0 +1,58 @@
+Um anél é um grupo que contém operações iguais ou diferentes de soma e multiplicação.
+          (ordem é o tamanho do conjunto possuido pelo anél.)
+
+Exemplo:            A O B = A + B               e             A K B = AB
+          (sendo O e K, representações de operações de soma e multiplicação, respectivamente.)
+
+      ou            A O B = A + B - 3           e             A K B = A + Y - (AB)/3
+          (sendo O e K, representações de operações de soma e multiplicação, respectivamente.)
+
+
+Requisitos:      (A,+,X) =  anél A com operação de soma (+) e operação de multiplicação (X).
+
+  - não vazio, ou seja, deve possuir elementos.
+  - possuir fechamento, ou seja, a soma de quaisquer elementos deve ser um elemento do anél. (∀ a,b ∈ A --> a+b ∈ A)
+  - possuir identidade u ou 1r, da qual, ∀a ∈ A, u O a = a O u = a, para um mesmo u.
+  - possuir inverso -b, onde, ∀b ∈ A,  b + -b  = -b + b = u.
+  -   (a+b = b+a)   ∧   (a+(b+c) = (a+b)+c)
+
+  - a X b = b X a                  ==   ab = ba
+  - a X (b X c) = (a X b) X c      ==   a(bc) = (ab)c 
+  - (a + b) X c = a X c + b X c    ==   (a+b)c = ac + bc
+  - a X (b + c) = a X b + a X c    ==   a(b+c) = ab + ac
+
+  - OPCIONAL: Dominio de Integridade: Para atingir 0, APENAS pode-se se em a.b(a vezes b), a ou b forem 0.
+
+  - COM RELAÇÃO A OUTRO ANÉL:
+          {
+          -HOMOMORFISMO
+                    Para (A,+,.) e (B,S,M), f(x) = (transformacao de e ∈ A para f(e) ∈ B), A --> B:
+
+                    -F(a+b) = F(a) S F(b)
+                    -F(a.b) = F(a) M F(b)
+
+          -ISOMORFISMO
+                    -Bijetora, ou seja, 
+                                        ∀ a ∈ A, 
+                                        ∃ f(a) ∈ B,
+
+                                        ∀(n ∈ A, n =/ a) --> f(a) ⊕ f(n) 
+          }
+
+
+RESOLUÇÕES GERAIS!
+Caso 1: (anél modular de ordem ímpar com soma e multiplicação comuns; {0,1,2,3,4} mod 5)
+
+                     ((A,+,.); A = {0,1,2,3,4} mod 5) é anel?
+          -não é vazio, pois possui 5 elementos.
+          -possui fechamento devido à aritmética modular contendo 0,1,2,3,4; ou seja, todos os elementos de Z(5)
+          - a + u = u + a = a;          u = 0
+          - a + -a = -a + a = u;        axioma da aritmética modular diz existir inverso para cada x em Z(n).
+          - (a + b = b + a)    ∧    (a + (b + c) = (a + b) + c)
+
+          - ab = ba
+          - a(bc) = (ab)c
+          - (a(b+c) = ab+ac)   ∧   ((a+b)c = ac+bc)
+
+                    -É ANÉL!
+          - É DOMÍNIO DE INTEGRIDADE, POIS NÃO HÁ (a, b, a=/0  ∧  b=/0) ∈ A --> (a.b = 0)

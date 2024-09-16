@@ -1,0 +1,18 @@
+Para se integrar por partes primeiro toma-se de base o conceito da regra de derivada do produto e a desenvolve.
+
+(1)  (u.x)' = u.dx + x.du
+ | 
+ |(2)  Int((u.x)') = Int(u.dx) + Int(x.du)
+ |(3)  u.x = Int(u.dx) + Int(x.du)
+ |(4)  Int(u.dx) = u.x - Int(x.du)
+
+onde busca-se o u cuja derivada é conhecida para facilitar a integração de u.dx.
+
+EX: Int(v.cosv.dv)
+    u = v
+    du/dv = 1 --> du = dv 
+    dx = cosv.dv
+    x = senv
+                      APLICADO (4) -->  v.senv - Int(senv.dv)
+                                        v.senv - -cosv
+                                        v.senv + cosv

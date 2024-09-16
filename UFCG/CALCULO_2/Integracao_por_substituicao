@@ -1,0 +1,13 @@
+Para usar-se a integração por substituição tem-se de possuir simultaneamente na conta um (u) qualquer e sua respectiva derivada (du) de modo a retirar o x da equação.
+
+EX:  Int((3x+17247185).3dx)
+    u = 3x+17247185
+    du = 3dx
+
+    SUBSTITUINDO:
+    Int(u.du)
+    u²/2
+
+    REPOSICIONANDO OS VALORES PRÉVIOS:
+    R: (3x+17247185)²/2
+  
